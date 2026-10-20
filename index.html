@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,user-scalable=no">
+<title>HANDARAN · Birthday Fight · هەندەران</title>
+<link href="https://fonts.googleapis.com/css2?family=Russo+One&family=Rajdhani:wght@500;700&family=Vazirmatn:wght@400;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="fx"></canvas>
+<button id="mute" aria-label="sound">🔊</button>
+
+<!-- TITLE -->
+<section id="title" class="screen on">
+  <div class="cube-wrap"><div class="cube"><b>H</b><b>B</b><b>D</b><b>🎂</b><b class="ku">هەند</b><b>🎁</b></div></div>
+  <p class="sub">HAPPY BIRTHDAY</p>
+  <h1 data-t="HANDARAN">HANDARAN</h1>
+  <h2 class="ku big">هەندەران</h2>
+  <p class="ku sub2">جەژنی لەدایکبوونت پیرۆز بێت</p>
+  <button class="start" data-k="X">PRESS START <span class="ku">· دەستپێبکە</span></button>
+  <small class="hint">Enter / ✕ / tap</small>
+</section>
+
+<!-- SELECT -->
+<section id="select" class="screen">
+  <header><b>CHOOSE YOUR FIGHTER</b><span class="ku">پاڵەوانەکەت هەڵبژێرە</span></header>
+  <div id="grid"><div id="trail"></div><div id="sel"></div></div>
+  <div id="info"><div class="en" id="in-en"></div><div class="ku" id="in-ku"></div><div class="tg" id="in-tg"></div></div>
+  <small class="hint">✕ Confirm · پشتڕاستکردنەوە &nbsp;|&nbsp; ← → ↑ ↓</small>
+</section>
+
+<!-- FIGHTER -->
+<section id="fighter" class="screen">
+  <div class="wrap">
+    <div id="stage"><div class="floor"></div><div class="ring"></div><div id="tilt"><img id="fchar" alt=""></div></div>
+    <div class="panel">
+      <h3 id="fn"></h3><h4 id="fk" class="ku"></h4><p id="ftag" class="tag"></p>
+      <div id="letter"></div>
+      <div id="stats"></div>
+      <div class="acts">
+        <button data-k="T">▲ <span id="sp"></span></button>
+        <button data-k="S">■ REPLAY · دووبارە</button>
+        <button data-k="O">● BACK · گەڕانەوە</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div id="ko"><div class="a" id="ko1"></div><div class="a ku" id="ko2"></div><div class="b">HAPPY BIRTHDAY HANDARAN!</div><div class="b ku">هەندەران جەژنت پیرۆز بێت!</div></div>
+<div id="flash"></div><div id="wipe"></div>
+
+<!-- PS2 style touch pad -->
+<div id="pad">
+  <div class="dp"><button class="u" data-k="U">▲</button><button class="l" data-k="L">◀</button><button class="r" data-k="R">▶</button><button class="d" data-k="D">▼</button></div>
+  <div class="fb"><button class="t" data-k="T">▲</button><button class="s" data-k="S">■</button><button class="o" data-k="O">●</button><button class="x" data-k="X">✕</button></div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
